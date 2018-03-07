@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page 3</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link href="external.css">
+    </head>
+<style>
+body {
+    font-family: Arial;
+    color: white;
+}
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    margin:100px 0px 0px 0px;
+}
+
+.left {
+    left: 0;
+    background-color: #111;
+}
+
+.right {
+    right: 0;
+    background-color: red;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.centered img {
+    width: 150px;
+    border-radius: 50%;
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-default">
+        <div class="container-fluid">
+        <div class="navbar-header">
+        <a class="navbar-brand"><font color="black">Otis Klawans</font></a>
+        </div>
+        <ul class="nav navbar-nav">
+        <li><a href="#"><font color="black">Home Page</font></a></li>
+        <li><a href="#"><font color="black">Who I Am & Interests</font></a></li>
+        <li><a href="#"><font color="black">Family & School</font></a></li>
+        </ul>
+        </div>
+        </nav>
+<div class="split left">
+  <div class="centered">
+    <img src="img_avatar2.png" alt="Avatar woman">
+    <h2>Jane Flex</h2>
+    <p>Some text.</p>
+  </div>
+</div>
+
+<div class="split right">
+  <div class="centered">
+    <img src="img_avatar.png" alt="Avatar man">
+    <h2>John Doe</h2>
+    <p>Some text here too.</p>
+  </div>
+</div>
+     
+</body>
+</html>
