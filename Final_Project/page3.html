@@ -1,39 +1,47 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Page 3</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <link href="external.css">
+    <title>Page 3</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
 <style>
+.navbar{background-color:#DFA59A; 
+font-family: "Tahoma"; 
+padding: 5px 0px 5px 0px; 
+border:solid; border-width:2px; 
+border-color:#abb5c6; 
+position:fixed; 
+width:100%; 
+z-index:3;
+}
+
 body {
-    font-family: Arial;
-    color: white;
+    font-family: Tahoma;
 }
 
 .split {
     height: 100%;
     width: 50%;
     position: fixed;
-    z-index: 1;
+    z-index: 0;
     top: 0;
     overflow-x: hidden;
     padding-top: 20px;
-    margin:100px 0px 0px 0px;
+    margin:0px 0px 0px 0px;
 }
 
 .left {
     left: 0;
-    background-color: #111;
+    background-color: #F3E0DC;
 }
 
 .right {
     right: 0;
-    background-color: red;
+    background-color: #dceff3;
 }
 
 .centered {
@@ -44,40 +52,78 @@ body {
     text-align: center;
 }
 
-.centered img {
-    width: 150px;
+.centeredimg {
+    width: 275px;
     border-radius: 50%;
+    z-index:8; 
+    border:solid; 
+    border-width:2px; 
+   border-color:#abb5c6;
+   margin-top:35px;
 }
-</style>
-</head>
-<body>
-<nav class="navbar navbar-default">
+
+.footer {
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #DFA59A;
+   color: black;
+   text-align: center;
+   border:solid; 
+   border-width:2px; 
+   border-color:#abb5c6;
+   height:85px;
+}
+
+.otherpic{margin-bottom:45px;}
+
+    </style>
+    </head>
+    <body>
+    
+      <!-- NavBar -->
+      <nav class="navbar navbar-default">
         <div class="container-fluid">
         <div class="navbar-header">
         <a class="navbar-brand"><font color="black">Otis Klawans</font></a>
         </div>
         <ul class="nav navbar-nav">
-        <li><a href="#"><font color="black">Home Page</font></a></li>
-        <li><a href="#"><font color="black">Who I Am & Interests</font></a></li>
-        <li><a href="#"><font color="black">Family & School</font></a></li>
+        <li><a href="https://okklawans.github.io/ecs21718/Final_Project/index.html"><font color="black">Home Page</font></a></li>
+        <li><a href="https://okklawans.github.io/ecs21718/Final_Project/page2.html"><font color="black">Who I Am & Interests</font></a></li>
+        <li><a href="https://okklawans.github.io/ecs21718/Final_Project/page3.html"><font color="black">Family & School</font></a></li>
         </ul>
         </div>
         </nav>
-<div class="split left">
-  <div class="centered">
-    <img src="img_avatar2.png" alt="Avatar woman">
-    <h2>Jane Flex</h2>
-    <p>Some text.</p>
-  </div>
-</div>
+        
+       <!-- Left Screen -->
+       <div class="split left">
+       <div class="centered">
+       <img class="centeredimg" src="http://www.clker.com/cliparts/d/a/e/1/13155079792020248714For%20Family%20Sign.svg.med.png" width="275" height="275">
+       <h1><font color="#BC4639"><strong>Family</strong></font></h1>
+       <h4>My family is really important to me, and I love them with all of my heart. I live with my mom, Deb, and my 19 year old brother Ben. Ben is living on a farm in Georgia right now though. I don't live with my Dad, Lee, but I see him once or twice a week. In addition, I have a half brother named Danny who lives in the suburbs. Lastly, I have two cats named Frank Sinatra and Nugget. </h4>
+       <img class="otherpic" src="https://www.otmiri.com/wp-content/uploads/2018/01/border-400x100.png">
+       </div>
+       </div>
 
-<div class="split right">
-  <div class="centered">
-    <img src="img_avatar.png" alt="Avatar man">
-    <h2>John Doe</h2>
-    <p>Some text here too.</p>
-  </div>
-</div>
-     
+    <!-- Right Screen -->
+    <div class="split right">
+    <div class="centered">
+    <img class="centeredimg" src="http://privateschoolsmalaysia.com/wp-content/uploads/2016/11/private-schools-malaysia-4.jpg" width="275" height="275">
+    <h1><font color="#BC4639"><strong>School</strong></font></h1>
+    <h4>I have very mixed opinions on school. When I was younger I used to like school because I got to play with friends, but as I'm getting older, I'm beginning to enjoy it less and less. For kindergarten, I went to a private school named Waldorf, but for grades 1-8 I went to Waters School. Now I go to Lane Technical High School. Currently, my favorite subject is Human Geo.</h4>
+    <img class="otherpic" src="https://www.otmiri.com/wp-content/uploads/2018/01/border-400x100.png">
+    </div>
+    </div>
+  
+     <!-- Footer -->
+         <div class="footer">
+         <footer>
+            <p>Author's Email: <a href="okklawans@cps.edu"><font color="black">okklawans@cps.edu</font></a></p>
+            <p>© 2003-2018</p>
+            <p>All Rights Reserved</p>
+         </footer>
+         </div>
+
 </body>
 </html>
